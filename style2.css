@@ -1,0 +1,48 @@
+* {
+    background: rgb(22, 18, 40);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    color: gray;
+    margin: 20px;
+    text-align: center;
+    font-size: large;
+}
+
+.nameEmail {
+    background: white;
+    width: 90%;
+    padding: 10px;
+    display: block;
+    margin: 30px auto;
+}
+
+.message {
+    background: white;
+    width: 90%;
+    padding: 15px;
+    display: block;
+    margin: 30px auto;
+    height: 110px;
+}
+
+.sendButton {
+    background: rgb(202, 92, 92);
+    width: 92%;
+    padding: 15px;
+    display: block;
+    margin: 30px auto;
+}
+.sendButton b {
+    color: white;
+    background: rgb(202, 92, 92);
+}
+
+.sendButton :hover {
+    cursor: pointer;
+}

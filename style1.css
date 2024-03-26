@@ -1,0 +1,33 @@
+* {
+    background-color: rgb(40, 40, 84);
+    margin: 0;
+}
+.image {
+    height: 500px;
+}
+
+.text {
+    color: white;
+    margin: 60px 70px;
+}
+
+.button {
+    border: solid rgb(40, 40, 84);
+    display: flex;
+    margin-left: 70px;padding: 15px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button-logo {
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid rgb(88, 88, 149);
+    padding: 10px;
+}
+.button-text {
+    width: 120px;
+    padding: 10px;
+}
