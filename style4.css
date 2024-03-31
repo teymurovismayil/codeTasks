@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    font-family: "Butterfly Kids", cursive;
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.navbar__logo {
+    font-size: 40px;
+}
+
+.navbar__logo > a {
+    color: white;
+}
+
+.navbar__logo:hover {
+    cursor: pointer;
+}
+
+.navbar__lists {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__lists li {
+    padding: 20px;
+    list-style-type: none;
+    font-size: 30px;
+    color: white;
+}
+
+.navbar__lists li:hover {
+    cursor: pointer;
+    color: rgb(235, 18, 18);
+    transition-duration: 1s;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+.image {
+    width: 100%;
+    height: 65vh;
+    background-image: url(img/pexels-christian-heitz-842711.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+.text {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(105,117,8);
+    background: linear-gradient(90deg, rgba(105,117,8,0.9641106442577031) 8%, rgba(199,10,212,1) 54%, rgba(20,26,85,1) 98%);
+}
+
+.image_two {
+    width: 100%;
+    height: 50vh;
+    background-image: url(img/beautiful-landscape-illustration-generated-by-ai_551405-2438.avif);
+    background-size: cover;
+    background-repeat: round;
+    background-attachment: fixed;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
