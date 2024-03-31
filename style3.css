@@ -34,7 +34,20 @@
 .navbar__lists > ul {
     list-style-type: none;
     display: flex;
+    align-items: center;
     gap: 30px;
+}
+
+.navbar__lists__btn {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+}
+
+.navbar__lists__btn:hover {
+    cursor: pointer;
+    opacity: 6;
 }
 
 main {
@@ -141,5 +154,17 @@ main {
 } 
 
 .downland__free {
-    
+    margin: 20px 0;
+    border-radius: 20px;
+    height: 50px;
+    width: 35%;
+    border: 2px solid white;
+    background: none;
+    font-size: large;
+    color: red;
+}
+
+.downland__free:hover {
+    cursor: pointer;
+    background: white;
 }
