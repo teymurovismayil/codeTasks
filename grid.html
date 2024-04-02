@@ -7,55 +7,66 @@
     <title>Document</title>
     <style>
             .item1 {
-                grid-area: header;
+                grid-area: one;
+                background-color: aqua;
             }
             .item2 {
-                grid-area: sidebar;
+                grid-area: two;
+                background-color: rgb(18, 10, 59);
             }
             .item3 {
-                grid-area: Content1;
+                grid-area: three;
+                background-color: rgb(184, 40, 21);
             }
             .item4 {
-                grid-area: Content2;
+                grid-area: four;
+                background-color: rgb(136, 185, 21);
             }
             .item5 {
-                grid-area: Content3;
+                grid-area: five;
+                background-color: rgb(155, 20, 121);
             }
             .item6 {
-                grid-area: footer;
+                grid-area: six;
+                background-color: rgb(0, 0, 0);
+                width: 20px;
+            }
+
+            .item7 {
+                grid-area: seven;
+                background-color: rgb(5, 85, 32);
+            }
+
+            .item8 {
+                grid-area: eight;
+                background-color: rgb(173, 121, 25);
+                
             }
 
             .grid-container {
                 display: grid;
-                grid-template-areas:  'header header header'
-                                      'sidebar Content1 Content1'
-                                      'sidebar Content1 Content1'
-                                      'sidebar Content2 Content3'
-                                      'sidebar Content2 Content3'
-                                      'footer footer footer'  ;
+                grid-template-areas:  'one one two two two three four five five six'
+                                       'seven seven eight eight eight eight four five five six'
+                                       'seven seven eight eight eight eight four five five six';
                 gap: 10px;
-                padding: 150px;
-                grid-template-rows: 80px 100px 100px 100px 100px;
+                padding: 30px;
+                grid-template-rows: 100px 100px 100px;
             }
 
-            .grid-container > div {
-                text-align: center;
-                font-size: 50px;
-                background-color: blueviolet;
-                
-            }
-
+         
     </style>
 
 </head>
 <body>
     <div class="grid-container">
-        <div class="item1">header</div>
-        <div style="background-color: red;" class="item2">sidebar</div>
-        <div class="item3">Content1</div>
-        <div class="item4">Content2</div>
-        <div class="item5">Content3</div>
-        <div class="item6">footer</div>
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+        <div class="item6"></div>
+        <div class="item7"></div>
+        <div class="item8"></div>
     </div>
 </body>
 </html>
