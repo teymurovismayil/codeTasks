@@ -35,7 +35,7 @@ body {
     justify-content: center;
 }
 
-.navbar__logo:hover{
+.navbar__logo > div:hover{
     background-color: gray;
     cursor: pointer;
 }
@@ -144,6 +144,7 @@ body {
     background: none;
     margin-top: 15px;
     border: none;
+    background-color: rgb(239, 233, 233, 0.4);
 }
 
 .people__about__text__btn:hover {
@@ -183,7 +184,6 @@ body {
     width: 95%;
     height: 100vh;
     margin: 0 auto;
-    border: 1px solid red;
     background-image: url(img/map.jpg);
 }
 
