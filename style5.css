@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background {
+    width: 100%;
+    height: 100vh;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box {
+    width: 30%;
+    height: 90vh;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 3px 1px 1px rgb(143, 142, 142);
+}
+
+.text {
+    display: grid;
+    justify-items: center;
+    margin-top: 50px;
+    font-size: x-large;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: rgb(21, 117, 159);
+    border-radius: 30px;
+    font-size: large;
+}
