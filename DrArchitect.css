@@ -63,7 +63,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Segoe UI",Arial,sans-serif;   
+    font-family: "Segoe UI",Arial,sans-serif;  
     font-weight: 400;
 }
 
@@ -195,4 +195,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+footer > p > a {
+    color: inherit;
+}
+
+footer > p > a:hover {
+    color: rgb(76, 175, 46);
 }
