@@ -1,0 +1,42 @@
+.background {
+    display: flex;
+    gap: 50px;
+}
+
+.image {
+    width: 500px;
+    height: 300px;
+    background-image: url(img/fantasy-island-with-waterfalls-3d-illustration-elements-of-this-image-furnished-by-nasa-generative-ai-free-photo.jpg);
+    background-size: cover;
+    margin: 40px 40px;
+    position: relative;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    z-index: -1;
+}
+
+.image2 {
+    width: 500px;
+    height: 300px;
+    background-image: url(img/beautiful-landscape-illustration-generated-by-ai_551405-2438.avif);
+    background-size: cover;
+    margin: 110px 40px;
+    position: relative;
+}
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    position: absolute;
+    left: -50px;
+    bottom: -50px;
+    z-index: -1;
+}
