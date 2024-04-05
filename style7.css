@@ -1,54 +1,4 @@
-<<<<<<< HEAD
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Teko", sans-serif;
-}
 
-.navbar {
-    width: 100%;
-    background-color: rgb(48,192,185);
-    display: flex;
-    justify-content: space-around;
-}
-
-.navbar__logo {
-    border: 1px solid red;
-    padding: 20px;
-}
-
-.navbar__lists {
-    border: 1px solid blue;
-    display: flex;
-    align-items: center;
-}
-
-.navbar__lists > ul {
-    list-style-type: none;
-    display: flex;
-    gap: 40px;
-    padding: 20px;
-    font-size: larger;
-}
-
-
-
-.listsBtn {
-    background-color: blue;
-    font-size: large;
-    color: white;
-    border-radius: 50px;
-    padding: 5px 20px 5px 20px;
-}
-
-/* .test {
-    background-color: blueviolet;
-    position: absolute;
-    width: 100%;
-    height: 20px;
-} */
-=======
 .background {
     display: flex;
     gap: 50px;
@@ -91,4 +41,4 @@
     bottom: -50px;
     z-index: -1;
 }
->>>>>>> 724d5e3eadbf6c92b3ace466a4ab0fd9c27ffc88
+
