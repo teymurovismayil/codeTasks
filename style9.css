@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    background-color: green;
+    color: white;
+}
+
+section {
+    width: 95%;
+    height: 85vh;
+    margin: 15px auto;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.container {
+    width: 100%;
+    height: 40vh;
+    background-color: aqua;
+    display: flex;
+    gap: 20px;
+}
+
+.container > div {
+    width: 33%;
+    height: 100%;
+    background-color: red;
+    
+}
+
+@media only screen and (max-width:600px) {
+    .container {
+        width: 100%;
+        height: 40vh;
+        background-color: aqua;
+        flex-direction: column;
+    }
+    
+    .container > div {
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        
+    }
+}
