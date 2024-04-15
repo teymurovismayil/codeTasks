@@ -18,12 +18,73 @@
     position: relative;
 }
 
+.zeedap {
+    margin-top: -100px;
+}
+
 .btn {
     background-color: #ffff;
     padding: 9px 22px;
 }
 
+.btn:hover {
+    color: white;
+    background-color: black;
+}
+
 .writings {
     position: absolute;
     bottom: -13rem;
+    height: 55%;
+    background-color: #ffff;
+    width: 85%;
+    padding-top: 90px;
+}
+
+@media only screen and (max-width:800px){
+    .writings {
+        
+        width: 100%;
+        height: auto;
+       bottom: -25rem;
+    }
+}
+
+.box {
+    height: 25rem;
+}
+
+.box__image {
+    width: 100%;
+    height: 90%;
+}
+
+.box__image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box__image > img:hover {
+    cursor: pointer;
+    background-color: rgb(240, 11, 11);
+}
+
+.box__text {
+    width: 100%;
+    height: 10%;
+    color: orangered;
+}
+
+footer {
+    width: 100%;
+    height: 50vh;
+    background-color: coral;
+    display: flex;
+    align-items: center;
+}
+
+.ColButton {
+    display: flex;
+    justify-content: center;
 }
