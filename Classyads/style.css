@@ -8,10 +8,21 @@ header {
     border: 1px solid red;
     height: 100vh;
     width: 100%;
-    background-image: url(../img/memati.jpg);
+    background-image: url(../img/hero_2.jpg.webp);
     background-size: cover;
     background-repeat: no-repeat;
+    /* position: relative; */
 }
+
+/* header::before {
+    content: '';                                                 mellimden sorus
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+} */
+
+
 
 .navbar {
     position: fixed;
@@ -25,21 +36,116 @@ header {
     height: 4rem;
 }
 
-.search {
-    width: 80%;
-    border: 1px solid red;
-    height: 100px;
+.general {
+    height: 85%;
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
-.search > form {
+form {
     display: flex;
+    justify-content: space-between;
+}
+
+.formBg {
+   background-color: rgba(255, 255, 255, 0.3);
+   border-radius: 7px; 
+   padding: 1.5rem
 }
 
 .form__button {
-    background-color: green;
-    padding: 7px 37px;
+    background-color: rgb(48,227,202);
+    padding: 7px 45px;
     border: none;
+    height: 3rem;
+    width: 100%;
+}
+
+form > input {
+    border: none;
+}
+
+.looking {
+    padding-left: 20px;
+    width: 22rem;
+    height: 3rem;
+    width: 100%;
+    border: none;
+}
+
+.icon {
+    padding-right: 5rem;
+    padding-left: 20px;
+    background: url("../img/noun-location-6781856.png") no-repeat right;
+    background-size: 20px;
+    background-color: white;
+    height: 3rem;
+    width: 100%;
+    border: none;
+} 
+
+.categories {
+    height: 3rem;
+    padding-right: 7rem;
+    padding-left: 20px;
+    width: 100%;
+    border: none;
+}
+
+.products {
+    background-color: white;
+    margin-top: -20px;
+    box-shadow: 0 1px 0 0 rgb(56, 55, 55);
+}
+
+.products__item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 13rem;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.products__sum {
+    align-self: center;
+    width: 80px;
+    background-color: gray;
+    border-radius: 9999px;
+}
+
+.products__item:hover {
+    background-color: rgb(48,227,202);
+    margin-top: -20px;
+    transition: 1s;
+    cursor: pointer;
+    .products__sum{
+        background-color: rgb(29, 172, 153);
+    }
+}
+
+/*** Main nin css kodlari ***/
+
+main {
+    height: 100vh; 
+    width: 100%;
+    border: 1px solid blue;
+    margin-top: 15rem;
+}
+.image {
+    height: 50%;
+    width: 100%;
+    background: #31b411;
+}
+
+.text {
+    height: 50%;
+    width: 100%;
+    background-color: aqua;
+}
+.image > img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
 }
