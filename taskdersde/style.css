@@ -1,104 +1,67 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container {
-    width: 98%;
-    height: 100vh;
-    margin: 0 auto;
-    background-color: #72026c;
-} 
-
-.card1 {
-    height: 100vh;
-    border: 1px solid red;
-}
-.left {
-    
-    border-radius: 20px;
-    position: relative;
+#clients {
+  width: 100%;
+  height: 100vh;
+  padding-top: 30px;
 }
 
-.imgText {
-    color: #72026c;
-    position: absolute;
-    bottom: 40px;
-    left: 40px;
-    width: 90%;
+.clients-txt {
+  width: 50%;
+  height: 70px;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.left > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
+.boxes {
+  width: 75%;
+  margin: 90px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.boxes__item {
+  width: 18%;
+  height: 200px;
+  background-color: rgb(240, 228, 228);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.boxes__item-img {
+  width: 70%;
+  height: 40%;
+  overflow: hidden;
+}
+.boxes__item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.right {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border-radius: 20px;
+.other {
+  width: 75%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
 }
-
-.up {
-    height: 50%;
-    width: 100%;
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0px 3px 4px 0px black;
+.other__item {
+  width: 16%;
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
-
-.up > span {
-    font-size: small;
-}
-
-.down {
-    height: 50%;
-    width: 100%;
-    display: flex;
-    gap: 20px;
-}
-
-.downLeft {
-    height: 100%;
-    width: 50%;
-    background-color: brown;
-    border-radius: 20px;
-    padding: 80px 40px;
-}
-
-.downLeft > h2 {
-    color: white;
-}
-
-.downRight {
-    height: 100%;
-    width: 50%;
-    background-color: orange;
-    border-radius: 20px;
-    padding: 80px 40px;
-}
-
-.downRight > h2 {
-    color: white;
-}
-
-.downRight > p {
-    color: white;
-    font-size: 20px;
-    margin-top: 20px;
-}
-
-button {
-    padding: 15px 25px;
-    border-radius: 9999px;
-    border: none;
-    color: white;
-    background-color: orange;
-    margin-top: 20px;
-}
+.other__item h3 {
+  font-size: 50px;
+  padding-right: 10px;
+}/*# sourceMappingURL=style.css.map */
