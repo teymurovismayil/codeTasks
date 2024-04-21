@@ -11,16 +11,17 @@ header {
     background-image: url(../img/hero_2.jpg.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    /* position: relative; */
+    position: relative;
+    /* background: linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255,0,150,0.3)), url(../img/hero_2.jpg.webp); */
 }
 
-/* header::before {
-    content: '';                                                 mellimden sorus
+header::after {
+    content: '';                                                 
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-} */
+}
 
 
 
