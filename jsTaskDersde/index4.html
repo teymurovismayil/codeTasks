@@ -35,6 +35,61 @@
         let newarr = names.map(name => {
             return name.toLocaleUpperCase();
         }) 
+        console.log(newarr);
+
+        // let arr = Object.keys(products).map(key => products[key]);    10 10 10
+        // console.log(arr);
+  
+        const result = countries.filter((countrie) => countrie.includes('land'));
+        console.log(result);
+
+        const sixcharacter = countries.filter((countrie) => countrie.length==6);
+        console.log(sixcharacter);
+
+        const sixandmorecharacter = countries.filter((countrie) => countrie.length>5);
+        console.log(sixandmorecharacter);
+
+        const startE = countries.filter((countrie) => countrie.startsWith('e'));
+        console.log(startE);
+
+        const value = products.filter((product) => product.price!=='');
+        console.log(value);
+
+        let getStringLists = function(array) {
+            let filterStr = array.filter((item)=>{
+                return typeof item  === 'string';
+            })
+            return filterStr
+        }
+        console.log(getStringLists(["men", "sen",66,55,"onlar"]));
+
+        const sum = numbers.reduce((sum, number)=>sum + number, 0);
+        console.log(sum);
+
+        const sentence = countries.reduce((acc, country, index)=>{
+            const seperator = index === countries.length -2 ? ' and ' : ',';
+            return acc + country + seperator;
+        },'')
+        console.log(sentence + ' are noth European countries');
+
+        const some = (element) => element.length>7;
+        console.log(names.some(some));
+
+        const every = (element) => element.includes('land');
+        console.log(names.every(every));
+
+        const found = countries.find((element) => element.length == 6);
+        console.log(found);
+
+        const foundIndex = countries.findIndex((element) => element.length == 6);
+        console.log(foundIndex);
+
+        const foundPosition = countries.findIndex((element) => element=='Norway');
+        console.log(foundPosition);
+
+        const foundPositionRussia = countries.findIndex((element) => element=='Russia');
+        console.log(foundPositionRussia);
+
     </script>
 </body>
 
