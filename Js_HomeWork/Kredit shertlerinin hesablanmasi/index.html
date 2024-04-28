@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+
+        
+            const EmekHaqqi = prompt("Ayliq nə qədər əməkhaqqi aldiğinizi qeyd edin:");
+            const amount = prompt("Nə qədər kredit istəyirsiniz:");
+            const period = prompt("Neçə ayiq krdit istəyirsiniz:");
+            let monthly_Payment;
+            let faizDerecesi;
+            let rate;
+            const salary = parseInt(EmekHaqqi)
+            const desired_Amount = parseInt(amount);
+            const monthly_Period = parseInt(period);
+            console.log(EmekHaqqi);
+            console.log(amount);
+            console.log(period);
+
+            
+            
+            if (desired_Amount > salary*10) {
+                console.log("size bu shertlerle kredit dushmur");
+                
+            }
+            else if (monthly_Period > 0 && monthly_Period<=12) {
+                faizDerecesi = desired_Amount + (desired_Amount*13)/100;
+                rate =13;
+                monthly_Payment = faizDerecesi / monthly_Period;
+            console.log(desired_Amount + " azn mebleg size  " + rate + "%le" + monthly_Period + " ay muddetine  ayliq " 
+            + monthly_Payment + " manat odenishle veririlir.");
+                
+            }
+
+            else if (monthly_Period > 12 && monthly_Period <=24) {
+                faizDerecesi = desired_Amount + (desired_Amount*15)/100;
+                faizDerecesi = faizDerecesi + (faizDerecesi*15)/100;
+                rate = 15;
+                monthly_Payment = faizDerecesi / monthly_Period;
+            console.log(desired_Amount + " azn mebleg size  " + rate + "%le" + monthly_Period + " ay muddetine  ayliq " 
+            + monthly_Payment + " manat odenishle veririlir.");
+            }
+
+            else if (monthly_Period > 24 && monthly_Period <=36) {
+                faizDerecesi = desired_Amount + (desired_Amount*17)/100; 
+                faizDerecesi = faizDerecesi + (faizDerecesi*17)/100; 
+                faizDerecesi = faizDerecesi + (faizDerecesi*17)/100; 
+                rate = 17;
+                monthly_Payment = faizDerecesi / monthly_Period;
+            console.log(desired_Amount + " azn mebleg size  " + rate + "%le" + monthly_Period + " ay muddetine  ayliq " 
+            + monthly_Payment + " manat odenishle veririlir.");
+            }
+
+            else {
+                console.log("size bu shertlerle kredit dushmur");
+            }
+      
+
+         
+
+    </script>
+
+</body>
+</html>
