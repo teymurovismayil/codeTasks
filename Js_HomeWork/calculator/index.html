@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+
+/*         Calculator Taski nin CSS kodlari balayir              */
+
+       .mathOperation {
+        width: 30px;
+       }
+       .answer {
+        width: 30px;
+        height: 15px;
+        border: 1px solid red;
+        display: inline-block;
+       }
+
+/*         Calculator Taski nin CSS kodlari bitir              */
+
+       .sectionTwo {
+         margin: 100px auto; 
+         height: auto;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-between;
+       }
+
+        .size {
+          width: 150px;
+          padding: 10px;
+          border: 1px solid red;
+        }
+
+        .execute {
+          padding: 10px;
+          width: 170px;
+          margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--         Calculator Taski nin HTML kodlari balayir              -->
+
+  <div class="section" style="width: 27%; border: 1px solid blue; margin: 0 auto;">
+    <form style="margin-left: 15px;">
+      <input class="numberOne" type="text" >
+      <input class="mathOperation" type="text">
+      <input class="numberTwo" type="text">
+    </form>
+    <div style="display: flex; flex-direction: column;">
+      <div class="answer" ></div>
+      <button class="btn">Hesabla</button>
+    </div>
+  </div>
+
+   <!--         Calculator Taski nin html kodlari bitir              -->
+ 
+
+  <hr><h1 style="margin-top: 100px; text-align: center;">Ikinci Task</h1>
+
+   <div class="sectionTwo">
+      <h3>Width</h3>
+      <input type="number" class="size sizeFirst" placeholder="Enini qeyd edin"></input>
+      <h3>Height</h3>
+      <input type="number" class="size sizeSecond" placeholder="Hundurluyunu qeyd edin"></input>
+      <h3>BackGround Color</h3>
+      <input type="text" class="size sizeThird" placeholder="Arxa fon rengini qeyd edin"></input>
+      <div class="box"></div>
+      <input class="execute" type="button" value="Button">
+  </div>
+
+
+ 
+<script src="script.js"></script>
+</body>
+</html>
