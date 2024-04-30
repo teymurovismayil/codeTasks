@@ -1,12 +1,31 @@
-    let numberOne = document.querySelector(".numberOne")
+    let numberOne = document.querySelector(".numberOne");
     let mathOperation = document.querySelector(".mathOperation")
-    let numberTwo = document.querySelector(".numberTwo")
+    let numberTwo = document.querySelector(".numberTwo");
     let answer = document.querySelector(".answer")
     const button = document.querySelector(".btn")
-    
-    button.addEventListener("click", function(){
-      
-            toplama = Number(numberOne.innerText)+Number(numberTwo.innerText);
-            console.log(toplama);
-        
+    let topla;
+ 
+    button.addEventListener("click" , function(){
+        if (mathOperation.value=="+") {
+            document.querySelector(".answer").innerText=Number(numberOne.value)+Number(numberTwo.value)
+            
+        }
+        else if (mathOperation.value=="-") {
+            document.querySelector(".answer").innerText=Number(numberOne.value)-Number(numberTwo.value)
+        }
+
+        else if (mathOperation.value=="*") {
+            document.querySelector(".answer").innerText=Number(numberOne.value)*Number(numberTwo.value)
+        }
+
+        else if (mathOperation.value=="/") {
+            document.querySelector(".answer").innerText=Number(numberOne.value)/Number(numberTwo.value)
+        }
+       
     })
+   
+
+
+
+
+    // document.querySelector(".answer").innerText=Number(numberOne.value)+Number(numberTwo.value)
