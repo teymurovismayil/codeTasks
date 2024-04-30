@@ -1,8 +1,8 @@
   /*         Calculator Taski nin JS kodlari balayir              */
-    let numberOne = document.querySelector(".numberOne");
-    let mathOperation = document.querySelector(".mathOperation")
-    let numberTwo = document.querySelector(".numberTwo");
-    let answer = document.querySelector(".answer")
+    const numberOne = document.querySelector(".numberOne");
+    const mathOperation = document.querySelector(".mathOperation")
+    const numberTwo = document.querySelector(".numberTwo");
+    const answer = document.querySelector(".answer")
     const button = document.querySelector(".btn")
     document.querySelector(".answer").style.cssText ="width:auto; padding:10px" 
     
@@ -39,9 +39,9 @@
     const execute = document.querySelector(".execute")
     
     execute.addEventListener("click", function(){
-        document.querySelector(".box").style.cssText ="border: 1px solid orange; margin-top:30px"
-        box.style.height = Number(sizeWidth.value)+"px"
-        box.style.width = Number(sizeHeight.value)+"px"
+        document.querySelector(".box").style.cssText ="margin-top:30px; transition: 1s "
+        box.style.height = Number(sizeHeight.value)+"px"
+        box.style.width = Number(sizeWidth.value)+"px"
         box.style.backgroundColor = sizeBg.value
     })
 
