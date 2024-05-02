@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cornflowerblue;
+}
+.container {
+    width: 60%;
+    height: 90vh;
+    background-color: white;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.boxes {
+    width: 88%;
+    overflow: hidden;
+    background-color: rgb(60, 102, 119);
+    border-radius: 5px;
+}
+
+.accordion-title{
+    padding: 10px;
+}
+
+.accordion-content{
+    max-height: 0px;
+    transition: all 1s ease;
+}
+
+.active{
+    max-height: 100px;
+    padding: 0px 10px 10px 10px;
+
+}
