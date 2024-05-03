@@ -1,10 +1,11 @@
 const input = document.querySelector(".input")
 const add = document.querySelector(".add")
 const list = document.querySelector(".list")
+
 add.addEventListener("click", function(){
     
     const allList = document.createElement('li')
-    allList.style.listStyle="delteBox"
+    allList.style.listStyle="none"
     
     allList.innerText=input.value
     
@@ -14,4 +15,5 @@ add.addEventListener("click", function(){
     list.append(allList)
   
 })
+
 
